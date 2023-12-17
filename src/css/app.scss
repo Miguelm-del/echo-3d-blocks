@@ -1,0 +1,150 @@
+// app global css in SCSS form
+body {
+  background: rgb(246, 246, 246);
+}
+
+h1 {
+  font-size: 3.3em;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0em;
+}
+
+h2 {
+  font-size: 2.7em;
+}
+
+h3 {
+  font-size: 2.3em;
+  font-weight: 500;
+}
+
+p {
+  font-size: 2.2em;
+  margin: 0px 0px 32px 0px;
+  text-align: justify;
+  hyphens: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 2.5em;
+  }
+
+  h3 {
+    font-size: 2.1em;
+  }
+
+  p {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 2.8em;
+  }
+
+  h2 {
+    font-size: 2.3em;
+  }
+
+  h3 {
+    font-size: 1.9em;
+  }
+
+  p {
+    font-size: 1.8em;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 2.1em;
+  }
+
+  h3 {
+    font-size: 1.7em;
+  }
+
+  p {
+    font-size: 1.6em;
+    line-height: 1.5rem;
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  h1 {
+    font-size: 2.2em;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1.4em;
+  }
+}
+
+.stylized-font {
+  font-family: $stylized-font-family;
+}
+
+// PANES
+
+$pane-margin: 20px;
+
+.pane {
+  z-index: 1010;
+  transition: transform 0.3s;
+
+  @media screen and (max-width: 1024px) {
+    border-radius: 10px;
+    overflow: hidden;
+    margin: $pane-margin;
+    position: absolute;
+    height: calc(100% - #{$pane-margin * 2}) !important;
+  }
+}
+
+.pane-body {
+  height: calc(100vh - 350px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.pane-body-content {
+  margin: 1.5px;
+  padding-bottom: 15px;
+}
+
+.skip-link {
+  white-space: nowrap;
+  margin: 1em auto;
+  top: 0;
+  position: fixed;
+  left: 50%;
+  margin-left: -72px;
+  opacity: 0;
+}
+
+.skip-link:focus {
+  opacity: 1;
+  background-color: white;
+  padding: 0.5em;
+  border: 1px solid black;
+}
