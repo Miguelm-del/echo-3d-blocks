@@ -1,5 +1,11 @@
 # Echo 3D Blocks (echo-3d-blocks)
 
+## Descrição:
+
+Nosso projeto visa tornar o ensino de programação acessível a pessoas com deficiência visual, combinando tecnologia de visão computacional com componentes 3D, criando uma experiência educacional inclusiva e envolvente.
+
+## Description
+
 Our project aims to make programming education accessible to individuals with visual impairments by blending computer vision technology with 3D components, creating an inclusive and engaging educational experience.
 
 [Deploy App with Firebase Hosting](https://echo-3d-blocks.web.app/#/)
